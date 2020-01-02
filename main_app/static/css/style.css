@@ -26,4 +26,9 @@ nav ul li a {
     font-size: 25px;
 }
 
+.card {
+    background-color: black;
+    color: rgb(18, 233, 65);
+}
+
 
