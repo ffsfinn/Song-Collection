@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>:songDetail:</h1>
+
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{ song.name }}</span>
+    <p>:artist: {{ song.artist }}</p>
+    <p>:description: {{ song.description }}</p>
+    {% if song.year > 0 %}
+      <p>:releaseYear: {{ song.year }}</p>
+    {% else %}
+      <p>:releaseYear: Too Old..</p>
+    {% endif %}
+  </div>
+</div>
+
+{% endblock %}
